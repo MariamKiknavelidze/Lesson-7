@@ -111,3 +111,8 @@ header {
 	padding-top: 50px;
 	display: inline-block;
 }
+
+.animation {
+	max-width: 100%;
+	width: 30%;
+}
