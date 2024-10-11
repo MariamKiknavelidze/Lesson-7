@@ -15,6 +15,11 @@ img {
 .logo {
 	width: 100px;
 }
+.container {
+	max-width: 1475px;
+	width: 100%;
+	margin: 0 auto;
+}
 
 button {
 	border:none;
@@ -31,7 +36,7 @@ header {
 	left: 0;
 }
 
-section {
+.slider-section {
 	background-color: #0020F4;
 	padding-top: 200px;
 	padding-bottom: 65px;
@@ -64,4 +69,45 @@ section {
 .slider-pagination > div{
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.project-section {
+	margin-top: 394px;
+	padding: 70px 0;
+	position: relative;
+}
+.project-section::before{
+	content: "";
+	width: 100%;
+	height: 308px;
+	/* background-color: #0020F4; */
+	margin-top: 394px;
+	padding: 70px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.slider-box img{
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+.slider-box{
+	display: inline-block;
+	max-width: 463px;
+	height: 420px;
+	box-shadow: 0px 10px 30px #0A22F433;
+	position: relative;
+
+}
+.slider-box p {
+	position:absolute
+    bottom: 10px;
+	padding: 28px; 30px;
+	border-radius:12px;
+	width:460px;
+}
+.slider-box-wrapper {
+	padding-top: 50px;
+	display: inline-block;
 }
