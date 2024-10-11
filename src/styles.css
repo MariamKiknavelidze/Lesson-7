@@ -12,7 +12,56 @@ ul {
 img {
 	width: 100%;
 }
+.logo {
+	width: 100px;
+}
+
 button {
-	border: none;
+	border:none;
 	background: none;
-} */
+}
+.logo,nav, nav li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+section {
+	background-color: #0020F4;
+	padding-top: 200px;
+	padding-bottom: 65px;
+}
+.img-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+}
+.photo-1 {
+	max-width: 707px;
+	width: 40%;
+	margin-right: 25px;
+}
+.photo-2{
+	max-width: 948px;
+	width: 50%;
+}
+
+.dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px; 
+	background-color: #FFFFFF;
+	opacity:30%;
+	border-radius: 50%;
+}
+.dot.active {
+	opacity: 1;
+}
+.slider-pagination > div{
+	display: inline-block;
+	vertical-align: middle;
+}
