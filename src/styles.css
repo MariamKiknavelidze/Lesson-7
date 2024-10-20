@@ -145,12 +145,99 @@ header {
 	background-blend-mode:luminosity;
 }
 .item:hover {
-	background-blend-mode: initial;
+	background-blend-mode: white;
 	background-size: cover;
 }
 .item:hover p {
 	color: rebeccapurple;
 }
-@keyframes {
+.animation{
+	/* animation: animation-change;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode:  ; */
+	position: absolute;
+	height: auto;
+	animation-duration: 3s;
+ }
+.img1 {
+	animation-name: move1;
+}
+.img2 {
+	animation-name:move2;
+}
+
+.move {
+	width: 100px;
+	height: 100px;
+	background-color: red; 
+	position: absolute;
+	top:0;
+	left: 0;
+    animation-name: move;
+	animation-duration:5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	z-index: inherit;
 
 }
+@keyframes move1 {
+	0% {
+		/* transform: translate(0,0); */
+		top: 50%;
+		left: 0;
+	}
+	30% {
+		/* transform: translate(300px,0); */
+		top: 100%;
+		left: 50%;
+	}
+	60% {
+		top: 50%;
+		left: 100%;
+	}
+	100% {
+		/* transform: translate(0,0); */
+		top: 0;
+		left: 50%;
+	}
+} 
+/* @keyframes move2 {
+	0% {
+		/* transform: translate(0,0); */
+		top: 50%;
+		left: 0;
+	}
+	30% {
+		/* transform: translate(300px,0); */
+		top: -100%;
+		left: 50%;
+	}
+	60% {
+		top: -50%;
+		left: 100%;
+	}
+	100% {
+		/* transform: translate(0,0); */
+		top: 0;
+		left: 100%;
+	}
+} */
+
+
+
+
+/* @keyframes animation-change{
+    from {
+		background-image: url("../src/images/hotel.svg");
+		width: 100%DS;
+	}
+    to {
+		background-image: unset;
+		background-color: darkblue;
+	}
+} */
